@@ -245,6 +245,7 @@
                             type="video/mp4">
                 </video>
             </div>
+
             <div class="column">
                 <video id="matting-video" controls playsinline height="100%">
                     <source src="images/wolf.mp4"
@@ -262,23 +263,53 @@
             <h3>
                 Interactive 3D Reconstruction Results
             </h3>
-            <p class="text-center">CMU Panoptic Studio</p>
-            <img src="img/qual_vc/00011456/171204_pose6_00_29_00011456.jpg" width=184>
-            <!-- <img src="img/qual_vc/00011456/171204_pose6_00_01_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_13_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_27_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_09_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_03_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_25_00011456.jpg" width=184>
-            <img src="img/qual_vc/00011456/171204_pose6_00_07_00011456.jpg" width=184> -->
-            <p class="text-center">
-            We do not show VCs here to avoid clutter.
-            </p>    
+
+            <div class="column">
+                <p class="text-center">Bonobo(Ape)</p>
+
+                <video id="bonobo-video" controls playsinline height="50%">
+                    <source src="videos/bonobo_male.mp4"
+                            type="video/mp4">
+                </video>
+
+                <model-viewer src="meshes/bonobo.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="309.2deg 86.87deg 9.5m" field-of-view="5deg"  controls playsinline height="50%" width=900>
+                </model-viewer> 
+            </div>
+
+            <div class="column">
+                <p class="text-center">Wolf(Quadrupeds)</p>
+
+                <video id="wolf-video" controls playsinline height="50%">
+                    <source src="videos/gray_wolf_female.mp4"
+                            type="video/mp4">
+                </video>
+                <model-viewer src="meshes/gray_wolf_female.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="309.2deg 86.87deg 9.5m" field-of-view="5deg"  controls playsinline height="50%" width=900>
+                </model-viewer> 
+            </div>
+
+            <div class="column">
+                <p class="text-center">Ostrich(Bird)</p>
+
+                <video id="ostrich-video" controls playsinline height="50%">
+                    <source src="videos/common_ostrich_male.mp4"
+                            type="video/mp4">
+                </video>
+
+                <model-viewer src="meshes/common_ostrich_male.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="309.2deg 86.87deg 9.5m" field-of-view="5deg"  controls playsinline height="50%" width=900>
+                </model-viewer> 
+            </div>
+
+            
+            <!-- <img src="img/qual_vc/00011456/171204_pose6_00_29_00011456.jpg" width=184> -->
+
+            <!-- <p class="text-center">
+            Bonobo(Ape)
+            </p>     -->
             
             
             <!-- <br> -->
-            <model-viewer src="Frame2.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="309.2deg 86.87deg 9.5m" field-of-view="5deg" width=900>
-            </model-viewer> 
+            <!-- <model-viewer src="meshes/bonobo.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="309.2deg 86.87deg 9.5m" field-of-view="5deg" width=900>
+            </model-viewer>  -->
             <br>
             <p class="text-center">CMU Panoptic Studio</p>            
             <img src="img/qual_vc/00031435/171204_pose4_00_01_00031435.jpg" width=184>
